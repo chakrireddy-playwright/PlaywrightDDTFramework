@@ -1,0 +1,6 @@
+{
+  "emailTextbox": "#userEmail",
+  "passwordTextbox": "#userPassword",
+  "loginButton": "#login",
+  "errorMessage": "[aria-label='Incorrect email or password.']"
+}

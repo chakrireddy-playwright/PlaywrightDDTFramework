@@ -1,0 +1,6 @@
+Cart URL: https://rahulshettyacademy.com/client/#/dashboard/cart
+Success Message:  Thankyou for the order. 
+Success Message:  Thankyou for the order. 
+Order ID:  | 6a26b6ee17ee3e78bac71e76 | 
+Order ID:  | 6a26b6ee17ee3e78bac71e76 | 
+Logout Successful

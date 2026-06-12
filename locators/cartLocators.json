@@ -1,0 +1,4 @@
+{
+    "cartProducts": "h3",
+    "checkoutButton": "button:has-text('Checkout')"
+}

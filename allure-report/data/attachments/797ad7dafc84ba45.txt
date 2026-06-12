@@ -1,0 +1,5 @@
+Success Message:  Thankyou for the order. 
+Success Message:  Thankyou for the order. 
+Order ID:  | 6a278f5b17ee3e78bac8c5d3 | 
+Order ID:  | 6a278f5b17ee3e78bac8c5d3 | 
+Logout Successful

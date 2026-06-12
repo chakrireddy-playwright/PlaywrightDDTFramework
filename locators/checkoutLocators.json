@@ -1,0 +1,5 @@
+{
+    "countryTextbox": "input[placeholder='Select Country']",
+    "countryOption": "button.ta-item",
+    "placeOrderButton": ".action__submit"
+}

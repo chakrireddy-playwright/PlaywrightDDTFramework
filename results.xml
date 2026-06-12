@@ -1,0 +1,15 @@
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="8.552183000000001">
+<testsuite name="login.spec.ts" timestamp="2026-06-10T04:07:19.916Z" hostname="chromium" tests="2" failures="0" skipped="0" time="7.281" errors="0">
+<testcase name="Valid Login" classname="login.spec.ts" time="5.242">
+<system-out>
+<![CDATA[Success Message:  Thankyou for the order. 
+Order ID:  | 6a28e2fd17ee3e78bacc740f | 
+Order ID:  | 6a28e2fd17ee3e78bacc740f | 
+Logout Successful
+]]>
+</system-out>
+</testcase>
+<testcase name="Invalid Login" classname="login.spec.ts" time="2.039">
+</testcase>
+</testsuite>
+</testsuites>

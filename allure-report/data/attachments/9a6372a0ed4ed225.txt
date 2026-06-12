@@ -1,0 +1,5 @@
+Cart URL: https://rahulshettyacademy.com/client/#/dashboard/cart
+Current URL: https://rahulshettyacademy.com/client/#/dashboard/cart
+Expected Product: ZARA COAT 3
+Product Count: 1
+Cart Product 0: Automation

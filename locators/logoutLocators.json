@@ -1,0 +1,3 @@
+{
+    "logoutButton": "button:has-text('Sign Out')"
+}

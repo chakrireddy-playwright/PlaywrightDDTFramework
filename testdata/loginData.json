@@ -1,0 +1,18 @@
+[
+  {
+    "testName": "Valid Login",
+    "email": "chakrireddy9666@gmail.com",
+    "password": "reddy@123R",
+    "productName": "ZARA COAT 3",
+    "country": "India",
+    "expectedResult": "success"
+  },
+  {
+    "testName": "Invalid Login",
+    "email": "chakri123@gmail.com",
+    "password": "wrongPassword",
+    "productName": "ZARA COAT 3",
+    "country": "India",
+    "expectedResult": "failure"
+  }
+]

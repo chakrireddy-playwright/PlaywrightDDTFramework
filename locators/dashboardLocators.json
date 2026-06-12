@@ -1,0 +1,6 @@
+{
+  "productCards": ".card-body",
+  "productName": "b",
+  "addToCartButton": "text= Add To Cart",
+  "cartButton": "[routerlink='/dashboard/cart']"
+}

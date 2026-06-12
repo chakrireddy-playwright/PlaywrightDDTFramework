@@ -1,0 +1,3 @@
+Expected Product: ZARA COAT 3
+Product Count: 1
+Cart Product 0: Automation

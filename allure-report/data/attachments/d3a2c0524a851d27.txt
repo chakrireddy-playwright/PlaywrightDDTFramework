@@ -1,0 +1,8 @@
+Cart URL: https://rahulshettyacademy.com/client/#/dashboard/cart
+Current URL: https://rahulshettyacademy.com/client/#/dashboard/cart
+All H3 Tags: [ 'Automation', 'ZARA COAT 3' ]
+Success Message:  Thankyou for the order. 
+Success Message:  Thankyou for the order. 
+Order ID:  | 6a26b1e817ee3e78bac70e08 | 
+Order ID:  | 6a26b1e817ee3e78bac70e08 | 
+Logout Successful

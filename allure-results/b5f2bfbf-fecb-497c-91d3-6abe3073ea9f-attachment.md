@@ -1,0 +1,86 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: login.spec.ts >> Valid Login
+- Location: tests\login.spec.ts:9:13
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('h3').filter({ hasText: 'ZARA COAT 3' })
+Expected: visible
+Timeout: 10000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 10000ms
+  - waiting for locator('h3').filter({ hasText: 'ZARA COAT 3' })
+
+```
+
+```yaml
+- navigation:
+  - link "Automation Automation Practice":
+    - /url: ""
+    - heading "Automation" [level=3]
+    - paragraph: Automation Practice
+  - link "Get Shortlisted by Recruiters - Take QA Skill Assessments on TechSmartHire":
+    - /url: https://techsmarthire.com/
+  - list:
+    - listitem:
+      - button " HOME"
+    - listitem
+    - listitem:
+      - button " ORDERS"
+    - listitem:
+      - button " Cart"
+    - listitem:
+      - button "Sign Out"
+- heading "My Cart" [level=1]
+- button "Continue Shopping❯"
+- heading "No Products in Your Cart !" [level=1]
+```
+
+# Test source
+
+```ts
+  1  | import { BasePage } from './BasePage';
+  2  | import cartLocators from '../locators/cartLocators.json';
+  3  | import { expect } from '@playwright/test';
+  4  | 
+  5  | export class CartPage extends BasePage {
+  6  | 
+  7  |  async validateProductInCart(productName: string) {
+  8  | 
+  9  |     const product = this.page.locator('h3').filter({
+  10 |         hasText: productName
+  11 |     });
+  12 | 
+> 13 |     await expect(product).toBeVisible({
+     |                           ^ Error: expect(locator).toBeVisible() failed
+  14 |         timeout: 10000
+  15 |     });
+  16 | 
+  17 |     return true;
+  18 | }
+  19 |     async clickCheckout() {
+  20 | 
+  21 |         const checkoutBtn = this.page.locator(
+  22 |             cartLocators.checkoutButton
+  23 |         );
+  24 | 
+  25 |         await expect(checkoutBtn).toBeVisible({
+  26 |             timeout: 10000
+  27 |         });
+  28 | 
+  29 |         await checkoutBtn.click();
+  30 |     }
+  31 | }
+```
