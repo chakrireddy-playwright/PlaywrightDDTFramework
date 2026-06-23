@@ -23,7 +23,7 @@ for (const data of loginData) {
 
                 const isProductPresent =await cartPage.validateProductInCart(data.productName);
 
-                expect(false).toBeTruthy();
+                expect(isProductPresent).toBeTruthy();
                 
                 await cartPage.clickCheckout();
 
