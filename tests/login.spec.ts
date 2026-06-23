@@ -24,7 +24,7 @@ for (const data of loginData) {
                 const isProductPresent =await cartPage.validateProductInCart(data.productName);
 
                 expect(isProductPresent).toBeTruthy();
-
+                
                 await cartPage.clickCheckout();
 
                 await checkoutPage.selectCountry(data.country);

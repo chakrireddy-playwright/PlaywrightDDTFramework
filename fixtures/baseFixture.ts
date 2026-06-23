@@ -1,5 +1,8 @@
 import { test as base } from '@playwright/test';
 
+import 'dotenv/config';
+import { createJiraBug } from '../utils/createJiraBug';
+
 import { LoginPage } from '../pages/LoginPage';
 import { DashboardPage } from '../pages/DashboardPage';
 import { CartPage } from '../pages/CartPage';
@@ -52,6 +55,27 @@ export const test = base.extend<MyFixtures>({
     logoutPage: async ({ page }, use) => {
 
         await use(new LogoutPage(page));
+    }
+});
+
+test.afterEach(async ({}, testInfo) => {
+
+    if (testInfo.status !== testInfo.expectedStatus && testInfo.retry === 0) {
+
+       await createJiraBug(
+    `Playwright Failure - ${testInfo.title}`,
+    `
+Test Name: ${testInfo.title}
+
+File: ${testInfo.file}
+
+Screenshot Folder:
+${testInfo.outputDir}
+
+Error:
+${testInfo.error?.message}
+`
+);
     }
 });
 
