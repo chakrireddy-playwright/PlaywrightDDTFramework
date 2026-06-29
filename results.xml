@@ -1,15 +1,65 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="24.765938">
-<testsuite name="login.spec.ts" timestamp="2026-06-21T06:37:06.025Z" hostname="chromium" tests="2" failures="0" skipped="0" time="20.119" errors="0">
-<testcase name="Valid Login" classname="login.spec.ts" time="13.681">
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="21.996962">
+<testsuite name="login.spec.ts" timestamp="2026-06-29T05:24:57.863Z" hostname="chromium" tests="2" failures="1" skipped="0" time="14.156" errors="0">
+<testcase name="Valid Login" classname="login.spec.ts" time="11.354">
 <system-out>
-<![CDATA[Success Message:  Thankyou for the order. 
-Order ID:  | 6a3786a2378febeacdbf974e | 
-Order ID:  | 6a3786a2378febeacdbf974e | 
-Logout Successful
+<![CDATA[Jira Bug Creation Failed
+Invalid URL
+
+[[ATTACHMENT|test-results\login-Valid-Login-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\login-Valid-Login-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\login-Valid-Login-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\login-Valid-Login-chromium-retry1\error-context.md]]
 ]]>
 </system-out>
+<failure message="expect(received).toBeTruthy()" type="expect.toBeTruthy">
+<![CDATA[  [chromium] › login.spec.ts:9:13 › Valid Login ────────────────────────────────────────────────────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      24 |                 const isProductPresent =await cartPage.validateProductInCart(data.productName);
+      25 |
+    > 26 |                 expect(false).toBeTruthy();
+         |                               ^
+      27 |                 
+      28 |                 await cartPage.clickCheckout();
+      29 |
+        at C:\Automation\PlaywrightDDTFramework\tests\login.spec.ts:26:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\login-Valid-Login-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\login-Valid-Login-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      24 |                 const isProductPresent =await cartPage.validateProductInCart(data.productName);
+      25 |
+    > 26 |                 expect(false).toBeTruthy();
+         |                               ^
+      27 |                 
+      28 |                 await cartPage.clickCheckout();
+      29 |
+        at C:\Automation\PlaywrightDDTFramework\tests\login.spec.ts:26:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\login-Valid-Login-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\login-Valid-Login-chromium-retry1\error-context.md
+]]>
+</failure>
 </testcase>
-<testcase name="Invalid Login" classname="login.spec.ts" time="6.438">
+<testcase name="Invalid Login" classname="login.spec.ts" time="2.802">
 </testcase>
 </testsuite>
 </testsuites>
